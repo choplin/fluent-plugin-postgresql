@@ -1,0 +1,28 @@
+= PostgreSQL plugin for Fluentd
+
+fluent-plugin-postgresql provides slow query input plugins for {Fluentd}[http://fluentd.org/].
+
+= Plugins
+
+== Input plugin
+
+=== postgresql_slow_query
+
+This plugin is customized tail input plugin. This plugin collect slow query data from PostgrSQL CSV Log.
+
+==== Configuration
+
+    <source>
+      type postgresql_slow_query
+      path /path/to/postgresql
+      tag postgresql.slow_query
+    </source>
+
+= TODO
+
+- build output plugin
+
+= Copyright
+
+Copyright:: Copyright (c) 2011- OKUNO Akihiro
+License::   Apache License, Version 2.0
